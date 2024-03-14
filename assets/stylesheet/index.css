@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style */
+
+html{
+    scroll-behavior: smooth ;
+}
+section#about,section#team,section#criteria {
+    margin: 120px auto;
+}
+section#contact{
+    margin-bottom: 42px;
+}
+
+/* universal */
+img{
+    width: 100%;
+}
+
+h1{
+    color: #2E2E2E;
+    font-size: 52px;
+    line-height: 78px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width:fit-content;
+}
+h2{
+    font-size: 52px;
+    line-height: 78px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width:fit-content;
+}
+
+h3{
+    font-size: 22px;
+    font-family: 'Artifex CF';
+    line-height: 29.77px;
+}
+p{
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Didact Gothic';
+    margin-bottom: 26px;
+}
+li::marker {
+    color: #4883CD;
+    
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Artifex CF";
+    color: #2e2e2e;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+
+.justify-s-b{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+nav>ul>li>a{
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+}
+nav>ul>li>a:hover{
+    padding: 7px 0;
+    border-top: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+}
+
+.height{
+    min-height: 102px;
+}
+/* first section */
+.margin-10{
+    margin-top: -102px;
+}
+.w-50{
+    width: 50%;
+}
+.width-25{
+    flex-basis: 270px;
+}
+
+.w-40{
+    flex-basis: 45%;
+}
+
+.margin-left{
+    width: 564px;
+    margin-left: auto;
+}
+.nav{
+    z-index: 1;
+}
+
+/* section 2 */
+.decoration>li{
+    list-style:disc;
+    list-style-position: inside;
+}
+.bg-2{
+    background-color: #F0F7FF;
+    padding: 46px;
+}
+
+.decoration>li{
+    font-family: 'Didact Gothic';
+}
+/* section-3 */
+@media only screen and (min-device-width: 480px) {
+    .tick{
+        margin: 80px auto;
+    }
+    #criteria h3{
+        margin-bottom: 42px;
+    }
+    .growth{
+        width: 270px;
+        min-height: 248px;
+        text-align: center;
+        padding: 18px;
+    }
+    .growth>img{
+        margin-bottom: 30px;
+    }
+    #team h2{
+        margin-bottom: 80px;
+    }
+    #team h3{
+        margin-bottom: 42px;
+    }
+    .width-25>img {
+        margin-bottom: 26px;
+    }
+    .margin-auto {
+        padding: 60px 70px;
+    }
+}
+.growth{
+    box-shadow: inset 0 0 10px #f1f0f0;
+}
+.growth>img{
+    width: auto;
+}
+.tick>div>p::before{
+    content: '\2713';
+    color: #4883CD;
+    margin-right: 20px;
+}
+
+/* section-4 */
+.partner>p{
+    margin-bottom: 0px;
+}
+.linkedin{
+    width: 34px;
+}
+
+.partner>p{ 
+    line-height: 23.6px;
+}
+.partner>a{
+    color:#4883CD;
+    font-family: 'Didact Gothic';
+}
+.icon>.fa,.fa-x-twitter {
+    color:#FFFFFF;
+    font-size: 32px !important;
+    background: #4883CD;
+    border-radius: 3px;
+    padding: 5px;
+}
+.icon>.fa-x-twitter {
+    margin-left: 20px;
+}
+/* contact */
+.w-524{
+    flex-basis:  524px;
+}
+.margin-auto{
+    width: 100%;
+    background: #F0F7FF;
+}
+
+form>input{
+    font-size: 18px;
+    width: 100%;
+    padding: 19px 20px;
+    margin-bottom: 18px;
+    font-family: 'Didact Gothic';
+}
+form>textarea{
+    font-size: 18px;
+    width: 100%;
+    padding: 19px 20px;
+    font-family: 'Didact Gothic';
+}
+.submit-btn{
+    font-size: 18px;
+    padding: 19px 40px;
+    background: #4883CD;
+    border: none;
+    color: #fff;
+    margin: 48px 0;
+    font-family: "Artifex CF";
+}
+.submit-btn:hover{
+    background: #346FB9;
+}
+.contact-p{
+    font-size: 22px;
+    line-height: 29.15px;
+    font-family: 'Artifex CF';
+    margin-bottom: 34px;
+}
+#contact>div>div>h2{
+    margin-bottom: 48px;
+}
+#contact>div>div>h3{
+    margin-bottom: 32px;
+}
+footer{
+    text-align: center;
+    margin: 50px auto;
+    font-family:"Open Sans";
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    transition: 1.5s;
+    scroll-behavior: smooth;
+}
+.sticky>nav>ul>li>a{
+    color: black;
+    border-color: black;
+}
+.topnav{
+    display: none;
+}
+#contact{
+    margin-bottom: 0px;
+}
+
+/* media query */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .w-524{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 480px){
+    #myLinks{
+        margin-top: 120px;
+    }
+    .margin-auto{
+        padding: 42px 20px;
+    }
+    #contact>div>div>h2 {
+        margin-bottom: 22px;
+    }
+    .header{
+        padding: 0 20px;
+    }
+    section#about,section#team,section#criteria {
+        margin: 42px auto;
+    }
+    .bg-2 {
+        padding: 42px 20px;
+    }
+    #team>h2,#about h2,#criteria h2{
+        margin-bottom: 22px;
+    }
+    #team>h3{
+        font-size: 14px;
+        line-height: 18.55px;
+    }
+    #criteria h3{
+        margin-top: 42px;
+        margin-bottom: 18px;
+    }
+    #team>h3{
+        margin-bottom: 22px;
+    }
+    h1{
+        margin: 42px 0 16px 0;
+    }
+    .margin-left{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .w-50{
+        width: 100%;
+    }
+    #about,#home,#team,#criteria,#contact{
+        height: 100%;
+    }
+    #about{
+        margin-top: 0px
+    }
+    body{
+        font-size: 16px;
+    }
+    h1,h2{
+        font-size: 26px;
+        line-height: 35.18px;
+    }
+    p{
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 24.35px;
+    }
+    .margin-auto h3{
+        margin-bottom: 12px;
+    }
+    form>input {
+        margin-bottom: 12px;
+    }
+    .submit-btn{
+        margin: 22px 0 34px 0;
+    }
+    .padding{
+        padding: 0 20px;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .m-flex-ewrap{
+        flex-wrap: wrap;
+    }   
+    .w-50,.width-25,.w-524{
+        flex-basis: 100%;
+    }
+    .width-25>img {
+        width: 35%;
+        margin-right: 18px;
+    }
+    .width-25{
+        display: flex;
+    }
+    .width-25>div{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    img{
+        width: 100%;
+    }
+    .header>nav>ul{
+        display: none;
+    }
+    .header>nav>a,.header>nav>ul{
+        z-index: 1;
+    }
+    .header>nav>ul::after{
+        display: block;
+        border: 1px solid #eee;
+    }
+    .growth{
+        width:45%;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .growth>img {
+        margin-bottom: 10px;
+    }
+    .growth p{
+        margin-bottom: 0px;
+    }
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    .topnav{
+        display: block;
+    }
+    .padding-17{
+        padding: 0 20px;
+    }
+    .width-25{
+        margin-bottom: 18px;
+    }
+    .w-524{
+        max-height: 320px;
+    }
+    footer{
+        margin: 32px 0;
+        line-height: 22px;
+        font-size: 10px;
+    }
+} 
+
+.line{
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+
+w-50
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    text-align: center;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav li:hover ,#myLinks li:hover{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border: none;
+}
+.tick>div>p{
+    margin-bottom: 12px;
+}
